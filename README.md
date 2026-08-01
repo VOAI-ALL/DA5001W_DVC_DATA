@@ -34,6 +34,12 @@ tests/                       Unit and API tests
 
 ## Environment
 
+For full environment recreation instructions, see:
+
+```text
+ENVIRONMENT_SETUP.md
+```
+
 Use the existing `MLDL` conda environment:
 
 ```powershell
