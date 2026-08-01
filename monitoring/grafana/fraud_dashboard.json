@@ -1,0 +1,42 @@
+{
+  "title": "Credit Card Fraud Detection",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "10s",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "API Request Rate",
+      "targets": [
+        {
+          "expr": "rate(fraud_api_requests_total[1m])",
+          "legendFormat": "{{status}}"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 0 }
+    },
+    {
+      "type": "timeseries",
+      "title": "Prediction Latency",
+      "targets": [
+        {
+          "expr": "histogram_quantile(0.95, rate(fraud_prediction_latency_seconds_bucket[5m]))",
+          "legendFormat": "p95"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 0 }
+    },
+    {
+      "type": "bargauge",
+      "title": "Predictions by Class",
+      "targets": [
+        {
+          "expr": "fraud_predictions_total",
+          "legendFormat": "class {{predicted_class}}"
+        }
+      ],
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 8 }
+    }
+  ]
+}
+

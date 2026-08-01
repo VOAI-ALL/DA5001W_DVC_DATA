@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+.env
+
+# Local data and generated artifacts
+creditcard.csv
+*.pdf
+*.xlsx
+data/processed/
+models/
+reports/
+mlruns/
+logs/
+*.log
+
+!models/.gitkeep
+!reports/.gitkeep
+!data/processed/.gitkeep
+
+# Local Codex/task metadata
+.agents/

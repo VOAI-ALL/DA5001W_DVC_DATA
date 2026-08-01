@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+joblib
+fastapi
+uvicorn
+mlflow
+prometheus-client
+confluent-kafka
+pyspark
+apache-airflow
+pytest
+dvc

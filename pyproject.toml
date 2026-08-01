@@ -1,0 +1,10 @@
+[project]
+name = "credit-card-fraud-mlops"
+version = "0.1.0"
+description = "End-to-end MLOps demo for real-time credit card fraud detection."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
