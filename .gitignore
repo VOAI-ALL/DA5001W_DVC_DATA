@@ -32,3 +32,5 @@ htmlcov/
 
 # DVC Google OAuth credentials
 config/dvc-google-oauth-client.json
+
+dvc-google-oauth-client.json
