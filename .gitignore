@@ -29,3 +29,6 @@ htmlcov/
 
 # Local Codex/task metadata
 .agents/
+
+# DVC Google OAuth credentials
+config/dvc-google-oauth-client.json
